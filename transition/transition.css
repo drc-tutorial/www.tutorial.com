@@ -1,0 +1,51 @@
+.transition {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	background-color: firebrick;
+	color: yellow;
+	font-size: 18px;
+
+	-webkit-transition: width 3s, 
+						height 3s, 
+						background-color 3s, 
+						font-size 3s, 
+						color 3s
+						-webkit-transform 3s;
+
+	   -moz-transition: width 3s, 
+	   					height 3s, 
+	   					background-color 3s, 
+	   					font-size 3s, 
+	   					color 3s,
+	   					-moz-transform 3s;
+
+		 -o-transition: width 3s, 
+	 					height 3s, 
+	 					background-color 3s, 
+	 					font-size 3s, 
+	 					color 3s,
+	 					-o-transform 3s;
+
+			transition: width 3s, 
+						height 3s, 
+						background-color 3s, 
+						font-size 3s, 
+						color 3s,
+						transform 3s;
+
+}
+
+.transition:hover {
+	width: 500px;
+	height: 500px;
+	background-color: yellow;
+	color: firebrick;
+	font-size: 48px;
+
+	-webkit-transform: rotate(3600deg);
+	   -moz-transform: rotate(3600deg);
+		-ms-transform: rotate(3600deg);
+		 -o-transform: rotate(3600deg);
+			transform: rotate(3600deg);
+}
