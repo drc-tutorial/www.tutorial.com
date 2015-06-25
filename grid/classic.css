@@ -1,0 +1,32 @@
+body {
+	color: white;
+}
+
+.header {
+	background-color: #333;
+	height: 200px;
+	padding-top: 20px;
+}
+
+.left {
+	background-color: #444;
+}
+
+.content {
+	background-color: #555;
+}
+
+.right {
+	background-color: #666;
+}
+
+.footer {
+	background-color: #777;
+	height: 150px;
+}
+
+.left,
+.content,
+.right {
+	height: 600px;
+}

@@ -1,0 +1,9 @@
+div[class*="grid"] { 
+	height: 200px;
+	background-color: #ccc;
+}
+
+.gap {
+	margin-left: 10px;
+	margin-top: 10px;
+}
