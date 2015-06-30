@@ -1,0 +1,12 @@
+.container {
+	background-color: tomato;
+}
+
+.container-fluid {
+	background-color: lightgreen;
+}
+
+.container,
+.container-fluid {
+	height: 400px;
+}

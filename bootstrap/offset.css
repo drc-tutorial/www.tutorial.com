@@ -1,0 +1,19 @@
+div[class*="col"] {
+	height: 600px;
+}
+
+.col-1 {
+	background-color: palevioletred;
+}
+
+.col-2 {
+	background-color: lightyellow;
+}
+
+.col-3 {
+	background-color: firebrick;
+}
+
+.col-4 {
+	background-color: paleturquoise;
+}

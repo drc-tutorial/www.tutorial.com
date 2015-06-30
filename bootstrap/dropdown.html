@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dropdown</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		
+		<div class="btn-group btn-group-lg">
+
+			<button class="btn btn-info">Button 1</button>
+			<button class="btn btn-warning">Button 2</button>
+			<button class="btn btn-danger">Button 3</button>
+			<button class="btn btn-link">Button 4</button>
+
+			<div class="btn-group btn-group-lg">
+				<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Main Button <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Sub-Item 1</a></li>
+					<li><a href="#">Sub-Item 2</a></li>
+				</ul>
+			</div>
+
+			<div class="btn-group btn-group-lg">
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-euro"></span> Dropdown <span class="caret"></span></button>
+
+				<ul class="dropdown-menu">
+					<li><a href="#">Sub Item 1</a></li>
+					<li class="disabled"><a href="#">Sub Item 2</a></li>
+					<li><a href="#">Sub Item 3</a></li>
+
+					<li class="divider"></li>
+
+					<li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Sub Item 4</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Sub Item 5</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-glass"></span> Sub Item 6</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+
+
+		<!-- <div class="btn-group">
+
+			<div class="dropdown">
+
+				<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+
+				<ul class="dropdown-menu">
+					<li><a href="#">Sub Item 1</a></li>
+					<li><a href="#">Sub Item 2</a></li>
+					<li><a href="#">Sub Item 3</a></li>
+					<li><a href="#">Sub Item 4</a></li>
+					<li><a href="#">Sub Item 5</a></li>
+					<li><a href="#">Sub Item 6</a></li>
+				</ul>
+
+			</div>
+
+		</div> -->
+
+	</div>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

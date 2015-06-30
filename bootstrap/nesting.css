@@ -1,0 +1,24 @@
+h1,h2 {
+	margin: 0;
+}
+
+.parent-b {
+	background-color: gold;
+}
+
+.parent-a {
+	background-color: lightyellow;
+}
+
+.child-1 {
+	background-color: teal;
+}
+
+.child-2 {
+	background-color: darkseagreen;
+}
+
+.parent-b,
+.parent-a {
+	height: 600px;
+}

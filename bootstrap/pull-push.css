@@ -1,0 +1,19 @@
+.col-sm-3 {
+	height: 300px;
+}
+
+.col-1 {
+	background-color: khaki;
+}
+
+.col-2 {
+	background-color: darkseagreen;
+}
+
+.col-3 {
+	background-color: rebeccapurple;
+}
+
+.col-4 {
+	background-color: darkorange;
+}

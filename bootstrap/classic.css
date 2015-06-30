@@ -1,0 +1,27 @@
+.header {
+	background-color: #FF9800;
+	height: 200px;
+}
+
+.left {
+	background-color: #7E8AA2;
+}
+
+.content {
+	background-color: #FFFFFF;
+}
+
+.right {
+	background-color: #7E8AA2;
+}
+
+.footer {
+	background-color: #263248;
+	height: 150px;
+}
+
+.left,
+.content,
+.right {
+	height: 630px;
+}
