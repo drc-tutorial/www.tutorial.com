@@ -1,0 +1,14 @@
+{
+  "name": "static",
+  "version": "1.0.0",
+  "description": "static files tutorial",
+  "main": "static.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fausto Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.0"
+  }
+}

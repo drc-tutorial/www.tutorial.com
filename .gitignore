@@ -113,3 +113,6 @@ crashlytics-build.properties
 
 # sftp configuration file
 sftp-config.json
+
+# Node Modules
+node_modules
