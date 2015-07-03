@@ -1,0 +1,17 @@
+.item {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+
+.get-selector(@index) when (@index > 0){
+	
+	.get-selector(@index - 1);
+
+	.item-@{index}:extend(.item) {
+		background-image: url('http://lorempixel.com/200/200/nature/@{index}');
+	}
+}
+
+.get-selector(10);

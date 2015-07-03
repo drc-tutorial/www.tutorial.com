@@ -1,0 +1,42 @@
+.get-prefix(@property; @value) {
+	-webkit-@{property}: @value;
+	-moz-@{property}: @value;
+	-ms-@{property}: @value;
+	-o-@{property}: @value;
+	@{property}: @value;
+}
+
+.transform {
+	width: 300px;
+	height: 300px;
+	margin: 50px;
+	font-size: 36px;
+	padding: 20px;
+}
+
+.translate {
+	background-color: lightgreen;
+
+	.get-prefix(transform,translate(70px, 75px));
+}
+
+.skew {
+	background-color: tomato;
+
+	.get-prefix(transform,skew(30deg, 20deg));
+}
+
+.rotate {
+	background-color: gold;
+
+	.get-prefix(transform,rotate(45deg));
+}
+
+.scale {
+	background-color: lightskyblue;
+	position: relative;
+	top: 500px;
+	left: 500px;
+
+	.get-prefix(transform, scale(2, 3));
+}

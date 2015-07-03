@@ -1,0 +1,56 @@
+.gap { 
+	margin: 10px; 
+	padding: 5px; 
+}
+
+.font {
+	font-size: 24px; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+
+.hover {
+	background-color: tomato;
+}
+
+.item-1:extend(.gap, .font) { 
+	color:red;
+
+	&:hover:extend(.hover){
+		color: white;
+	}
+}
+
+.item-2:extend(.gap, .font) { 
+	color:green;
+
+	&:hover:extend(.hover){
+		color: lime;
+	}
+}
+
+.item-3:extend(.gap, .font) { 
+	color:blue; 
+
+	&:hover:extend(.hover){
+		color: black;
+	}
+}
+
+/*.item-1 { 
+	color:red; 
+}
+
+.item-2 { 
+	color:green; 
+}
+
+.item-3 { 
+	color:blue; 
+}
+
+.item-1,
+.item-2,
+.item-3 {
+	&:extend(.gap,.font){}
+}*/

@@ -1,0 +1,17 @@
+.gap(@value){
+	margin: @value;
+	padding: @value / 2;
+}
+
+.gap(@margin; @padding){
+	margin: @margin;
+	padding: @padding;
+}
+
+.item-1 {
+	.gap(10px);
+}
+
+.item-2 {
+	.gap(13px; 8px);
+}

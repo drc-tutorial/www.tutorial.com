@@ -1,0 +1,46 @@
+.gap(@value){
+	margin: @value;
+	padding: @value / 2;
+}
+
+.font(@size: 2em) {
+	font-size: @size;
+}
+
+.background(@bg-color: #ccc;@pos: 1;@category: cats){
+	background-color: @bg-color;
+	background-image: url('http://lorempixel.com/300/300/@{category}/@{pos}');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.item-1 {
+	.gap(12px);
+	.font();
+	.background();
+}
+
+.item-2 {
+	.gap(10px);
+	.font(2.5em);
+	.background(lightyellow; 2; fashion);
+}
+
+.item-3 {
+	.gap(20px);
+	.font(1.75em);
+	.background(gold; 3; people);
+}
+
+.item-4 {
+	.gap(30px);
+	.font(1.5em);
+	.background(goldenrod; 4; food);
+}
+
+.item-5 {
+	.gap(25px);
+	.font(1.25em);
+	.background(darkgoldenrod; 5; sports);
+}

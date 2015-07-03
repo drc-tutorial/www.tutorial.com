@@ -1,0 +1,67 @@
+@size: 600px;
+
+.get-prefix(@property;@value){
+
+	-webkit-@{property}: @value;
+	   -moz-@{property}: @value;
+		-ms-@{property}: @value;
+		 -o-@{property}: @value;
+			@{property}: @value;
+}
+
+.get-animation(@prefix: ~''){
+
+	25% {
+		background-color: yellow;
+		top: 0;
+		left: @size;
+		@{prefix}transform: rotate(360deg);
+	}
+
+	50% {
+		background-color: red;
+		width: @size/2;
+		height: @size/2;
+		top: @size;
+		left: @size;
+	}
+
+	75% {
+		background-color: navy;
+		top: @size;
+		left: 0;
+		@{prefix}transform: rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes anima {
+	.get-animation(-webkit-);	
+}
+
+@-moz-keyframes anima {
+	.get-animation(-moz-);	
+}
+
+@-o-keyframes anima {
+	.get-animation(-o-);	
+}
+
+@keyframes anima {
+	.get-animation();	
+}
+
+.animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	width: @size/4;
+	height: @size/4;
+	padding: 20px;
+	font-size: 36px;
+	text-align: center;
+	background-color: #410041;
+	color: lime;
+
+	.get-prefix(animation; anima 5s linear infinite alternate);
+}

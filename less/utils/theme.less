@@ -1,0 +1,11 @@
+@color: #333; 
+@background: tomato;
+
+body { 
+	background-color: @background; 
+	color: @color; 
+}
+
+.item {
+	.get-prefix(transform, rotate(360deg));
+}

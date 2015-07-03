@@ -1,0 +1,70 @@
+body {
+  font-size: 24px;
+  background-color: lightyellow;
+}
+.header {
+  font-size: 1.25em;
+  padding: 50px;
+  background-color: #222222;
+  color: lightyellow;
+  height: 180px;
+}
+.header .menu {
+  text-align: right;
+  list-style: none;
+  float: right;
+  margin-top: 70px;
+}
+.header .menu li {
+  display: inline-block;
+}
+.header .menu a {
+  color: inherit;
+  text-decoration: none;
+  padding: 20px 30px;
+}
+.header .menu a:hover {
+  background-color: lightyellow;
+  color: #222222;
+}
+.header .logo {
+  float: left;
+}
+.content {
+  padding: 50px;
+}
+.content .title-1 {
+  font-size: 2.25em;
+}
+.content .title-2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.content img {
+  min-width: 100%;
+}
+.content #info-2,
+.content #info-4,
+.content #info-6 {
+  background-color: #222222;
+  color: lightyellow;
+}
+.content #info-1,
+.content #info-3,
+.content #info-5,
+.content #info-2,
+.content #info-4,
+.content #info-6 {
+  line-height: 50px;
+  font-size: 1.25em;
+  padding: 50px;
+}
+.content #info-1::first-line,
+.content #info-3::first-line,
+.content #info-5::first-line,
+.content #info-2::first-line,
+.content #info-4::first-line,
+.content #info-6::first-line {
+  font-size: 1.5em;
+  line-height: 100px;
+}

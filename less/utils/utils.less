@@ -1,0 +1,17 @@
+.get-prefix(@property;@value){
+
+	-webkit-@{property}: @value;
+	   -moz-@{property}: @value;
+		-ms-@{property}: @value;
+		 -o-@{property}: @value;
+			@{property}: @value;
+}
+
+.get-prefix(@property;@value;@prefixed){
+
+	-webkit-@{property}: @value, ~'-webkit-@{prefixed}';
+	   -moz-@{property}: @value, ~'-moz-@{prefixed}';
+		-ms-@{property}: @value, ~'-ms-@{prefixed}';
+		 -o-@{property}: @value, ~'-o-@{prefixed}';
+			@{property}: @value, @prefixed;
+}

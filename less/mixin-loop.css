@@ -1,0 +1,46 @@
+.item,
+.item-1,
+.item-2,
+.item-3,
+.item-4,
+.item-5,
+.item-6,
+.item-7,
+.item-8,
+.item-9,
+.item-10 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 10px;
+}
+.item-1 {
+  background-image: url('http://lorempixel.com/200/200/nature/1');
+}
+.item-2 {
+  background-image: url('http://lorempixel.com/200/200/nature/2');
+}
+.item-3 {
+  background-image: url('http://lorempixel.com/200/200/nature/3');
+}
+.item-4 {
+  background-image: url('http://lorempixel.com/200/200/nature/4');
+}
+.item-5 {
+  background-image: url('http://lorempixel.com/200/200/nature/5');
+}
+.item-6 {
+  background-image: url('http://lorempixel.com/200/200/nature/6');
+}
+.item-7 {
+  background-image: url('http://lorempixel.com/200/200/nature/7');
+}
+.item-8 {
+  background-image: url('http://lorempixel.com/200/200/nature/8');
+}
+.item-9 {
+  background-image: url('http://lorempixel.com/200/200/nature/9');
+}
+.item-10 {
+  background-image: url('http://lorempixel.com/200/200/nature/10');
+}

@@ -1,0 +1,56 @@
+.gap,
+.item-1,
+.item-2,
+.item-3 {
+  margin: 10px;
+  padding: 5px;
+}
+.font,
+.item-1,
+.item-2,
+.item-3 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+.hover,
+.item-1:hover,
+.item-2:hover,
+.item-3:hover {
+  background-color: tomato;
+}
+.item-1 {
+  color: red;
+}
+.item-1:hover {
+  color: white;
+}
+.item-2 {
+  color: green;
+}
+.item-2:hover {
+  color: lime;
+}
+.item-3 {
+  color: blue;
+}
+.item-3:hover {
+  color: black;
+}
+/*.item-1 { 
+	color:red; 
+}
+
+.item-2 { 
+	color:green; 
+}
+
+.item-3 { 
+	color:blue; 
+}
+
+.item-1,
+.item-2,
+.item-3 {
+	&:extend(.gap,.font){}
+}*/

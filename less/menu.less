@@ -1,0 +1,87 @@
+@theme-bg-color: lightyellow;
+@theme-color: #222;
+
+@alternete-bg-color: @theme-color;
+@alternete-color: @theme-bg-color;
+
+@padding: 50px;
+
+body {
+	font-size: 24px;
+	background-color: @theme-bg-color;
+}
+
+.header {
+	font-size: 1.25em;
+	padding: @padding;
+	background-color: @alternete-bg-color;
+	color: @alternete-color;
+	height: 180px;
+	
+	.menu {
+		text-align: right;
+		list-style: none;
+		float: right;
+		margin-top: 70px;
+
+		li {
+			display: inline-block;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+			padding: 20px 30px;
+
+			&:hover {
+				background-color: @theme-bg-color;
+				color: @theme-color;
+			}
+		}
+	}
+	
+	.logo {
+		float: left;
+	}
+}
+
+.content {
+
+	padding: @padding;
+
+	.title-1 {
+		font-size: 2.25em;
+	}
+
+	.title-2 {
+		font-size: 1.5em;
+		font-style: italic;
+	}
+
+	img {
+		min-width: 100%;
+	}
+
+	#info-2,
+	#info-4,
+	#info-6 {
+		background-color: @alternete-bg-color;
+		color: @alternete-color;
+	}
+
+	#info-1,
+	#info-3,
+	#info-5,
+	#info-2,
+	#info-4,
+	#info-6 {
+		line-height: 50px;
+		font-size: 1.25em;
+		padding: @padding;
+
+		&::first-line {
+			font-size: 1.5em;
+			line-height: 100px;
+		}
+	}
+}

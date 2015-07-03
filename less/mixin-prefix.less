@@ -1,0 +1,48 @@
+.get-prefix(@property;@value){
+
+	-webkit-@{property}: @value;
+	   -moz-@{property}: @value;
+		-ms-@{property}: @value;
+		 -o-@{property}: @value;
+			@{property}: @value;
+}
+
+.get-prefix(@property;@value;@prefixed){
+
+	-webkit-@{property}: @value, ~'-webkit-@{prefixed}';
+	   -moz-@{property}: @value, ~'-moz-@{prefixed}';
+		-ms-@{property}: @value, ~'-ms-@{prefixed}';
+		 -o-@{property}: @value, ~'-o-@{prefixed}';
+			@{property}: @value, @prefixed;
+}
+
+.transition {
+	width: 100px;
+	height: 100px;
+	padding: 10px;
+	background-color: firebrick;
+	color: yellow;
+	font-size: 18px;
+
+	@property: transition;
+
+	@value: width 3s,
+			height 3s,
+			background-color 3s,
+			font-size 3s,
+			color 3s;
+
+	@prefixed: transform 3s;
+
+	.get-prefix(@property;@value;@prefixed)
+}
+
+.transition:hover {
+	width: 500px;
+	height: 500px;
+	background-color: yellow;
+	color: firebrick;
+	font-size: 48px;
+
+	.get-prefix(transform; rotate(360deg));
+}
